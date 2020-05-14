@@ -131,28 +131,7 @@ spec:
           serviceName: <serviceNamTwo>
           servicePort: 80	
 ``` 		  
-EX:
----
-```
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  name: ingress-resource-1
-spec:
-  rules:
-  - host: springapp.example.com
-    http:
-      paths:
-      - backend:
-          serviceName: sringapp (servcie name should be our application context name/path)
-          servicePort: 80
-  - host: mavenwebapp.example.com
-    http:
-      paths:
-      - backend:
-          serviceName: maven-web-application
-          servicePort: 80
-```
+
 
 
 ### Path Based Routing Example
@@ -175,6 +154,7 @@ spec:
           serviceName: javawebapp
           servicePort: 80	
 ``` 
+
 
 
 `Make sure you have services created in K8's with type ClusterIP for your applications. Which your are defining in Ingress Resource`.
