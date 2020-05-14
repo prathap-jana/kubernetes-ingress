@@ -133,6 +133,7 @@ spec:
 ``` 		  
 EX:
 ---
+```
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
@@ -151,6 +152,8 @@ spec:
       - backend:
           serviceName: maven-web-application
           servicePort: 80
+```
+
 
 ### Path Based Routing Example
 ``` yaml		  
